@@ -8,6 +8,7 @@ android {
     compileSdk = 33
 
     defaultConfig {
+
         applicationId = "com.example.lab"
         minSdk = 31
         targetSdk = 33
@@ -19,7 +20,22 @@ android {
             useSupportLibrary = true
         }
     }
-
+//    apply plugin: 'com.android.application'
+//
+//    android {
+//        compileSdkVersion 30
+//        defaultConfig {
+//            applicationId "com.auth0.samples"
+//            minSdkVersion 28
+//            targetSdkVersion 30
+//            //...
+//
+//            //---> Add the next line
+////            manifestPlaceholders = [auth0Domain: "@string/com_auth0_domain", auth0Scheme: "https"]
+//            //<---
+//        }
+//        //...
+//    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -50,7 +66,7 @@ android {
 }
 
 dependencies {
-
+    implementation("com.auth0.android:auth0:2.10.1")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
     implementation("androidx.activity:activity-compose:1.7.2")
@@ -60,11 +76,13 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
+    implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
