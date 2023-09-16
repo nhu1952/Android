@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "561094848021",
+    "project_id": "lab1-notes-a9298",
+    "storage_bucket": "lab1-notes-a9298.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561094848021:android:0b19c1f3ab2bbfac31281c",
+        "android_client_info": {
+          "package_name": "com.example.lab1notes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC16vhei-5Mx_R0buxZe07PUSgf1r5Ej-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
