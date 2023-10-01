@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CA1D1D"
+            android:text="Nơi chụp ảnh và xem "
+            android:textAlignment="center"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="87dp"
+        android:background="#E67979"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <ImageButton
+        android:id="@+id/imgcamera"
+        android:layout_width="92dp"
+        android:layout_height="84dp"
+        android:backgroundTint="#F4DE1A"
+        app:srcCompat="@android:drawable/presence_video_online"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <Button
+        android:id="@+id/back5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9A3737"
+        android:text="Back"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="513dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
